@@ -13,3 +13,7 @@ export const createFullName = (firstName: string, lastName2: string): FullName =
 export const getFirstName = ({ firstName }: FullName): string => firstName
 
 export const getUpperCaseFirstName = R.compose(R.toUpper, getFirstName)
+
+export const createFullNameCurry = R.curry(createFullName)
+
+export const createFullNameWithUpperFirstName = R.compose(createFullNameCurry, R.toUpper)
