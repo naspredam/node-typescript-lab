@@ -10,6 +10,7 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "ramda": "^0.28.0",
     "typescript": "^4.5.5"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-typescript": "^7.16.7",
     "@types/jest": "^27.4.0",
+    "@types/ramda": "^0.27.64",
     "jest": "^27.4.7",
     "supertest": "^6.2.2",
     "ts-jest": "^27.1.3"

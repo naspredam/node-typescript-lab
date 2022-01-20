@@ -1,5 +1,5 @@
 import 'jest';
-import { manipulateNumbers, createFullName } from '../src/functions';
+import { manipulateNumbers, createFullName, getFirstName, getUpperCaseFirstName } from '../src/functions';
 
 describe('Set of tests for manipulation numbers', () => {
 
@@ -22,4 +22,15 @@ describe('create full name factory', () => {
         expect(fullName.firstName).toBe('John')
         expect(fullName.lastName).toBe('Smith')
     })
+
+    it('should get first name', () => {
+        const fullName = createFullName('John', 'Smith')
+        expect(getFirstName(fullName)).toBe('John')
+    })
+
+    it('should get first name to upper', () => {
+        const fullName = createFullName('John', 'Smith')
+        expect(getUpperCaseFirstName(fullName)).toBe('JOHN')
+    })
+
 })
