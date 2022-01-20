@@ -15,7 +15,7 @@ describe('Set of tests for manipulation numbers', () => {
 })
 
 describe('create full name factory', () => {
-    
+
     it('should create full name correctly', () => {
         const fullName = createFullName('John', 'Smith')
         expect(fullName).toBeDefined()

@@ -1,4 +1,4 @@
-import {FullName} from './types';
+import { FullName } from './types';
 
 const sum = (x: number, y: number): number => x + y
 
